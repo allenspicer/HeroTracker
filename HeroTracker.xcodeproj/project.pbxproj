@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		9F77DB1B1CC9763D00AF87DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F77DB1A1CC9763D00AF87DA /* main.m */; };
 		9F77DB1E1CC9763D00AF87DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F77DB1D1CC9763D00AF87DA /* AppDelegate.m */; };
-		9F77DB211CC9763D00AF87DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F77DB201CC9763D00AF87DA /* ViewController.m */; };
 		9F77DB241CC9763D00AF87DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F77DB221CC9763D00AF87DA /* Main.storyboard */; };
 		9F77DB261CC9763D00AF87DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F77DB251CC9763D00AF87DA /* Assets.xcassets */; };
 		9F77DB291CC9763D00AF87DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F77DB271CC9763D00AF87DA /* LaunchScreen.storyboard */; };
+		9F77DB321CC97BB800AF87DA /* HeroTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F77DB311CC97BB800AF87DA /* HeroTableViewController.m */; };
+		9F77DB351CC97BDD00AF87DA /* HeroDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F77DB341CC97BDD00AF87DA /* HeroDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		9F77DB1A1CC9763D00AF87DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F77DB1C1CC9763D00AF87DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9F77DB1D1CC9763D00AF87DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9F77DB1F1CC9763D00AF87DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9F77DB201CC9763D00AF87DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9F77DB231CC9763D00AF87DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F77DB251CC9763D00AF87DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F77DB281CC9763D00AF87DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F77DB2A1CC9763D00AF87DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F77DB301CC97BB800AF87DA /* HeroTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroTableViewController.h; sourceTree = "<group>"; };
+		9F77DB311CC97BB800AF87DA /* HeroTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroTableViewController.m; sourceTree = "<group>"; };
+		9F77DB331CC97BDD00AF87DA /* HeroDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroDetailViewController.h; sourceTree = "<group>"; };
+		9F77DB341CC97BDD00AF87DA /* HeroDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +61,12 @@
 		9F77DB181CC9763D00AF87DA /* HeroTracker */ = {
 			isa = PBXGroup;
 			children = (
+				9F77DB301CC97BB800AF87DA /* HeroTableViewController.h */,
+				9F77DB311CC97BB800AF87DA /* HeroTableViewController.m */,
+				9F77DB331CC97BDD00AF87DA /* HeroDetailViewController.h */,
+				9F77DB341CC97BDD00AF87DA /* HeroDetailViewController.m */,
 				9F77DB1C1CC9763D00AF87DA /* AppDelegate.h */,
 				9F77DB1D1CC9763D00AF87DA /* AppDelegate.m */,
-				9F77DB1F1CC9763D00AF87DA /* ViewController.h */,
-				9F77DB201CC9763D00AF87DA /* ViewController.m */,
 				9F77DB221CC9763D00AF87DA /* Main.storyboard */,
 				9F77DB251CC9763D00AF87DA /* Assets.xcassets */,
 				9F77DB271CC9763D00AF87DA /* LaunchScreen.storyboard */,
@@ -150,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F77DB211CC9763D00AF87DA /* ViewController.m in Sources */,
+				9F77DB321CC97BB800AF87DA /* HeroTableViewController.m in Sources */,
+				9F77DB351CC97BDD00AF87DA /* HeroDetailViewController.m in Sources */,
 				9F77DB1E1CC9763D00AF87DA /* AppDelegate.m in Sources */,
 				9F77DB1B1CC9763D00AF87DA /* main.m in Sources */,
 			);
@@ -303,6 +309,7 @@
 				9F77DB2F1CC9763D00AF87DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

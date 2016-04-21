@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HeroTableViewController.h
 //  HeroTracker
 //
 //  Created by Allen Spicer on 4/21/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HeroTableViewController : UITableViewController
 
 @end
-

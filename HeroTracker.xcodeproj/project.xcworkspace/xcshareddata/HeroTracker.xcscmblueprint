@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B4CA5CEA2CD5B4D213BAAE748FE656AFB47FEC4C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B4CA5CEA2CD5B4D213BAAE748FE656AFB47FEC4C" : 0,
+    "4E30AD79D343762B522B8A3EBEC54E432A0C44CD" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3EADAA84-3BF7-4353-84AC-22FC704A864B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B4CA5CEA2CD5B4D213BAAE748FE656AFB47FEC4C" : "HeroTracker\/",
+    "4E30AD79D343762B522B8A3EBEC54E432A0C44CD" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HeroTracker",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HeroTracker.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/allenspicer\/heroTracker.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4E30AD79D343762B522B8A3EBEC54E432A0C44CD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/allenspicer\/HeroTracker.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B4CA5CEA2CD5B4D213BAAE748FE656AFB47FEC4C"
+    }
+  ]
+}
