@@ -14,6 +14,8 @@
 		9F77DB291CC9763D00AF87DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F77DB271CC9763D00AF87DA /* LaunchScreen.storyboard */; };
 		9F77DB321CC97BB800AF87DA /* HeroTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F77DB311CC97BB800AF87DA /* HeroTableViewController.m */; };
 		9F77DB351CC97BDD00AF87DA /* HeroDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F77DB341CC97BDD00AF87DA /* HeroDetailViewController.m */; };
+		9F77DB371CC97C4700AF87DA /* heros.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F77DB361CC97C4700AF87DA /* heros.json */; };
+		9F77DB3A1CC97D1C00AF87DA /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F77DB391CC97D1C00AF87DA /* Hero.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		9F77DB311CC97BB800AF87DA /* HeroTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroTableViewController.m; sourceTree = "<group>"; };
 		9F77DB331CC97BDD00AF87DA /* HeroDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroDetailViewController.h; sourceTree = "<group>"; };
 		9F77DB341CC97BDD00AF87DA /* HeroDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroDetailViewController.m; sourceTree = "<group>"; };
+		9F77DB361CC97C4700AF87DA /* heros.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heros.json; sourceTree = SOURCE_ROOT; };
+		9F77DB381CC97D1C00AF87DA /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		9F77DB391CC97D1C00AF87DA /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,9 @@
 		9F77DB181CC9763D00AF87DA /* HeroTracker */ = {
 			isa = PBXGroup;
 			children = (
+				9F77DB361CC97C4700AF87DA /* heros.json */,
+				9F77DB381CC97D1C00AF87DA /* Hero.h */,
+				9F77DB391CC97D1C00AF87DA /* Hero.m */,
 				9F77DB301CC97BB800AF87DA /* HeroTableViewController.h */,
 				9F77DB311CC97BB800AF87DA /* HeroTableViewController.m */,
 				9F77DB331CC97BDD00AF87DA /* HeroDetailViewController.h */,
@@ -145,6 +153,7 @@
 				9F77DB291CC9763D00AF87DA /* LaunchScreen.storyboard in Resources */,
 				9F77DB261CC9763D00AF87DA /* Assets.xcassets in Resources */,
 				9F77DB241CC9763D00AF87DA /* Main.storyboard in Resources */,
+				9F77DB371CC97C4700AF87DA /* heros.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F77DB3A1CC97D1C00AF87DA /* Hero.m in Sources */,
 				9F77DB321CC97BB800AF87DA /* HeroTableViewController.m in Sources */,
 				9F77DB351CC97BDD00AF87DA /* HeroDetailViewController.m in Sources */,
 				9F77DB1E1CC9763D00AF87DA /* AppDelegate.m in Sources */,

@@ -10,6 +10,10 @@
 
 @interface HeroTableViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *heroNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *realNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *height;
+
 @end
 
 @implementation HeroTableViewController
