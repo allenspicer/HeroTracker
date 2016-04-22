@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Hero.h"
 
 @interface HeroTableViewController : UITableViewController
 
+@property (nonatomic)Hero *hero;
+
 @end
+
+
+

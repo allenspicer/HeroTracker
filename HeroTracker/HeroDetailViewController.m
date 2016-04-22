@@ -7,56 +7,66 @@
 //
 
 #import "HeroDetailViewController.h"
-#import "HeroTableViewController.h"
-#import "Hero.h"
+//#import "HeroTableViewController.h"
+//#import "Hero.h"
 
 @interface HeroDetailViewController ()
 
-@property NSMutableArray *heros;
+@property (weak, nonatomic) IBOutlet UILabel *heroNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel* realNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *powersLabel;
+@property (weak, nonatomic) IBOutlet UILabel *heightLabel;
+@property (weak, nonatomic) IBOutlet UILabel* weightLabel;
+
+
+- (void)configureView;
 
 @end
 
 @implementation HeroDetailViewController
 
+#pragma mark - Managing the detail view
+
+- (void)setHero:(Hero *)newHero
+{
+    if (_hero != newHero) {
+        _hero = newHero;
+        [self configureView];
+    }
+}
+
+- (void)configureView
+{
+   // if (self.hero)
+   // {
+        NSString *heroName = self.hero.heroName;
+        NSArray *heroNameArray = [heroName componentsSeparatedByString:@" "];
+        
+        self.title = [NSString stringWithFormat:@"%@", [heroNameArray lastObject]];
+        self.realNameLabel.text = self.hero.realName;
+        self.powersLabel.text = self.hero.powers;
+        //self.heightLabel.text = self.hero.height;
+        //self.weightLabel.text = self.hero.weight;
+
+        
+        //self.height.text = [NSString stringWithFormat:@"Level # %i", (int)self.hero.height];
+    //}
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"S.H.I.E.L.D. Hero Tracker";
+    
+    
     // Do any additional setup after loading the view.
-    
-    self.heros = [[NSMutableArray alloc]init];
-    [self loadHeros];
-    
-}
-    
-    - (void)loadHeros
-    {
-        // create a string with the filepath to the Hero List JSON file.
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"heros" ofType:@"json"];
-        
-        // built in method that allows us to load a JSON file into native Cocoa objects (NSDictionaries and NSArrays).
-        NSArray *heros = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:filePath] options:NSJSONReadingAllowFragments error:nil];
 
-        // iterate over array of dictionaries them and convert them into Agent objects.
-        //    Use the heros array from above as the array to iterate over. Create an NSDictionary object on the left side
-        //    of the for-in loop. Use this inside the for loop to create an Hero object.
-        
-        for (NSDictionary*anHeroDictionary in heros) {
-            Hero*someHero = [Hero heroWithDictionary:anHeroDictionary];
-            [self.heros addObject:someHero];
-            
-        }
+    [self configureView];
+}
         
 //still need to sort hero array by alphabetical by hero name. Technically won't change mine.
-                             
-        // instruct the table to reload its data.
+        // then instruct the table to reload its data.
       //  [self. reloadData];
-    
-    
-    
-    }
-    
-    
 
 
 - (void)didReceiveMemoryWarning {
