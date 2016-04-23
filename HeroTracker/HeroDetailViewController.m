@@ -37,12 +37,14 @@
 
 - (void)configureView
 {
-   // if (self.hero)
-   // {
-        NSString *heroName = self.hero.heroName;
-        NSArray *heroNameArray = [heroName componentsSeparatedByString:@" "];
+    if (self.hero)
+    {
+//        NSString *heroName = self.hero.heroName;
+//        NSArray *heroNameArray = [heroName componentsSeparatedByString:@" "];
+//        
+//        self.title = [NSString stringWithFormat:@"%@", [heroNameArray lastObject]];
         
-        self.title = [NSString stringWithFormat:@"%@", [heroNameArray lastObject]];
+        self.title = self.hero.heroName;
         self.realNameLabel.text = self.hero.realName;
         self.powersLabel.text = self.hero.powers;
         //self.heightLabel.text = self.hero.height;
@@ -50,7 +52,7 @@
 
         
         //self.height.text = [NSString stringWithFormat:@"Level # %i", (int)self.hero.height];
-    //}
+    }
 }
 
 
