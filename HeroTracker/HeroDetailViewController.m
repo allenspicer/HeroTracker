@@ -39,19 +39,11 @@
 {
     if (self.hero)
     {
-//        NSString *heroName = self.hero.heroName;
-//        NSArray *heroNameArray = [heroName componentsSeparatedByString:@" "];
-//        
-//        self.title = [NSString stringWithFormat:@"%@", [heroNameArray lastObject]];
-        
         self.title = self.hero.heroName;
-        self.realNameLabel.text = self.hero.realName;
-        self.powersLabel.text = self.hero.powers;
-        //self.heightLabel.text = self.hero.height;
-        //self.weightLabel.text = self.hero.weight;
-
-        
-        //self.height.text = [NSString stringWithFormat:@"Level # %i", (int)self.hero.height];
+        self.realNameLabel.text = [NSString stringWithFormat:@"Real Name: %@", self.hero.realName];
+        self.powersLabel.text = [NSString stringWithFormat:@"Powers: %@", self.hero.powers];
+        self.heightLabel.text = [NSString stringWithFormat:@"Height: %@", self.hero.height];
+        self.weightLabel.text = [NSString stringWithFormat:@"Weight: %i lbs", (int)self.hero.weight];
     }
 }
 

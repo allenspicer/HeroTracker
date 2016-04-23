@@ -13,7 +13,7 @@
 @property (nonatomic) NSString *heroName;
 @property (nonatomic) NSString *realName;
 @property (nonatomic) NSString *powers;
-@property (assign)    NSInteger height;
+@property (assign)    NSString *height;
 @property (assign)    NSInteger weight;
 
 
