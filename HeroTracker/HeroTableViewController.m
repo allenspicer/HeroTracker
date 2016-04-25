@@ -63,24 +63,22 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-//    //
-//    // 8. We need to set the segue identifier to the same one we used in the segue on the storyboard
-//    //
+
+//     set the segue identifier to the same one we used in the segue on the storyboard
+
    if ([[segue identifier] isEqualToString:@"DetailIdentifier"])
     {
-//        //
-//        // 9. We need to get an NSIndexPath for the selected cell
-//        //
+
+//        get an NSIndexPath for the selected cell
+
         NSIndexPath *indexPath = [self.tableView indexPathForCell:(sender)];
-//        
-//        //
-//        // 10. Now we're going to use the "row" property of the indexPath from above to pull out the associated Agent object
+
+//         use the "row" property of the indexPath from above to pull out the associated Agent object
 //        //     from the agents array.
-//        //
+
         Hero *selectedHero = self.heros[indexPath.row];
 //        
-
-//        
+    
         HeroDetailViewController *destinationViewController =  [segue destinationViewController];
 //        
        destinationViewController.hero = selectedHero;
